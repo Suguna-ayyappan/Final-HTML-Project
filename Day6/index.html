@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Registration Form</title>
+</head>
+<body>
+
+    <h1>Course Registration Form</h1>
+
+    <form>
+
+        
+        <fieldset>
+            <legend>Personal details</legend>
+
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="firstname" required></td>
+                </tr>
+
+                <tr>
+                    <td>Surname</td>
+                    <td><input type="text" name="surname"></td>
+                </tr>
+
+                <tr>
+                    <td>Mobile number</td>
+                    <td><input type="tel" name="mobile" required></td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password" placeholder="min 8 characters" required></td>
+                </tr>
+
+                <tr>
+                    <td>Confirm Password</td>
+                    <td><input type="password" name="confirmpassword" placeholder="min 8 characters" required></td>
+                </tr>
+
+                <tr>
+                    <td>DOB</td>
+                    <td><input type="date" name="dob" required></td>
+                </tr>
+
+                <tr>
+                    <td>Age</td>
+                    <td><input type="number" name="age" min="18" max="100" required></td>
+                </tr>
+
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender"> Male
+                        <input type="radio" name="gender"> Female
+                        <input type="radio" name="gender"> Others
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Select Country</td>
+                    <td>
+                        <select name="country">
+                            <option>INDIA</option>
+                            <option>USA</option>
+                            <option>China</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Upload Picture</td>
+                    <td><input type="file"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><input type="reset" value="Reset"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+      
+        <fieldset>
+            <legend>Course Details</legend>
+
+            <table>
+                <tr>
+                    <td>Select Course</td>
+                    <td>
+                        <select name="course">
+                            <option>Java Full Stack</option>
+                            <option>DSA</option>
+                            <option>AI</option>
+                            <option>Data Science</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Delivery Mode</td>
+                    <td>
+                        <input type="radio" name="delivery_mode"> Online
+                        <input type="radio" name="delivery_mode"> Offline
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>INSTITUTE NAME</td>
+                    <td>
+                        <input type="text" value="TAP ACADEMY" readonly>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                       <label> Choose your present Coding knowledge level
+                       </label>
+                       </td>
+                    <td>
+                        <input type="range" min="1" max="5">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Comments</td>
+                    <td>
+                        <textarea rows="4" cols="30"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
